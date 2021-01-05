@@ -1,0 +1,83 @@
+login as: root
+root@47.254.248.95's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+Welcome to Alibaba Cloud Elastic Compute Service !
+
+root@iZ8psgrzzbg4liht0yepagZ:~#
+login as: root
+root@47.254.248.95's password:
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-124-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+New release '20.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Welcome to Alibaba Cloud Elastic Compute Service !
+
+Last login: Tue Jan  5 16:41:48 2021 from 114.125.84.233
+root@iZ8psgrzzbg4liht0yepagZ:~# rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+root@iZ8psgrzzbg4liht0yepagZ:~# touch /etc/yum.repos.d/elasticsearch.repo
+touch: cannot touch '/etc/yum.repos.d/elasticsearch.repo': No such file or directory
+root@iZ8psgrzzbg4liht0yepagZ:~# yum install -y elasticsearch
+
+Command 'yum' not found, but can be installed with:
+
+apt install yum
+
+root@iZ8psgrzzbg4liht0yepagZ:~# apt install yum
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package yum
+root@iZ8psgrzzbg4liht0yepagZ:~# apt install -y elasticsearch
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package elasticsearch
+root@iZ8psgrzzbg4liht0yepagZ:~# apt install  elasticsearch
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package elasticsearch
+root@iZ8psgrzzbg4liht0yepagZ:~# apt install logstash
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package logstash
+root@iZ8psgrzzbg4liht0yepagZ:~# yum install -y logstash
+
+Command 'yum' not found, but can be installed with:
+
+apt install yum
+
+root@iZ8psgrzzbg4liht0yepagZ:~# install kibana
+install: missing destination file operand after 'kibana'
+Try 'install --help' for more information.
+root@iZ8psgrzzbg4liht0yepagZ:~# apt install kibana
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package kibana
+root@iZ8psgrzzbg4liht0yepagZ:~# /etc/elasticsearch/elasticsearch.yml
+-bash: /etc/elasticsearch/elasticsearch.yml: No such file or directory
+root@iZ8psgrzzbg4liht0yepagZ:~# systemctl start kibana
+Failed to start kibana.service: Unit kibana.service not found.
+root@iZ8psgrzzbg4liht0yepagZ:~# nginx.conf
+nginx.conf: command not found
+root@iZ8psgrzzbg4liht0yepagZ:~#
